@@ -1,0 +1,273 @@
+[04-Apr-2022 12:10:26 America/New_York] PHP Warning:  include(views/modules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:10:26 America/New_York] PHP Warning:  include(): Failed opening 'views/modules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:17:43 America/New_York] PHP Warning:  include(modules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:17:43 America/New_York] PHP Warning:  include(): Failed opening 'modules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:21:19 America/New_York] PHP Warning:  include(views/modules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:21:19 America/New_York] PHP Warning:  include(): Failed opening 'views/modules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:24:39 America/New_York] PHP Warning:  include(./modules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:24:39 America/New_York] PHP Warning:  include(): Failed opening './modules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:25:25 America/New_York] PHP Warning:  include(modules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:25:25 America/New_York] PHP Warning:  include(): Failed opening 'modules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:26:05 America/New_York] PHP Warning:  include(/var/www/sistemapos/viewsmodules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:26:05 America/New_York] PHP Warning:  include(): Failed opening '/var/www/sistemapos/viewsmodules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:27:02 America/New_York] PHP Warning:  include(/var/www/sistemapos/views/modules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:27:02 America/New_York] PHP Warning:  include(): Failed opening '/var/www/sistemapos/views/modules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:30:10 America/New_York] PHP Warning:  include(/modules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:30:10 America/New_York] PHP Warning:  include(): Failed opening '/modules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:34:09 America/New_York] PHP Warning:  include(/var/www/sistemapos/views/views/modules/login.php ): Failed to open stream: No such file or directory in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:34:09 America/New_York] PHP Warning:  include(): Failed opening '/var/www/sistemapos/views/views/modules/login.php ' for inclusion (include_path='.:/usr/share/php') in /var/www/sistemapos/views/template.php on line 190
+[04-Apr-2022 12:37:13 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(164): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 12:37:24 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(164): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 12:37:33 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(164): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 12:37:43 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(175): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 12:41:11 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(175): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 12:41:19 America/New_York] PHP Warning:  unlink(views/img/img_users/admin/bdb09004-ca2f-4d78-a6bb-789729b475bc.png): No such file or directory in /var/www/sistemapos/controllers/usuarios-controller.php on line 514
+[04-Apr-2022 12:41:19 America/New_York] PHP Warning:  rmdir(views/img/img_users/admin): No such file or directory in /var/www/sistemapos/controllers/usuarios-controller.php on line 515
+[04-Apr-2022 12:41:23 America/New_York] PHP Warning:  unlink(views/img/img_users/elvis/f4ecda23-f62b-4572-b52f-e4880bfdbdec.png): No such file or directory in /var/www/sistemapos/controllers/usuarios-controller.php on line 514
+[04-Apr-2022 12:41:23 America/New_York] PHP Warning:  rmdir(views/img/img_users/elvis): No such file or directory in /var/www/sistemapos/controllers/usuarios-controller.php on line 515
+[04-Apr-2022 12:41:26 America/New_York] PHP Warning:  unlink(views/img/img_users/hola/d013908f-ec27-40aa-8ef3-2dd6e7f41898.png): No such file or directory in /var/www/sistemapos/controllers/usuarios-controller.php on line 514
+[04-Apr-2022 12:41:26 America/New_York] PHP Warning:  rmdir(views/img/img_users/hola): No such file or directory in /var/www/sistemapos/controllers/usuarios-controller.php on line 515
+[04-Apr-2022 12:41:51 America/New_York] PHP Warning:  unlink(views/img/img_users/michael/3557f969-3785-420c-8e04-e501435e99ee.jpg): Permission denied in /var/www/sistemapos/controllers/usuarios-controller.php on line 351
+[04-Apr-2022 12:41:51 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in /var/www/sistemapos/controllers/usuarios-controller.php:383
+Stack trace:
+#0 /var/www/sistemapos/views/modules/usuarios.php(493): ControllerUser::ctl_EditUser()
+#1 /var/www/sistemapos/views/template.php(164): include('...')
+#2 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#3 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#4 {main}
+  thrown in /var/www/sistemapos/controllers/usuarios-controller.php on line 383
+[04-Apr-2022 12:43:40 America/New_York] PHP Warning:  unlink(views/img/img_users/michael/3557f969-3785-420c-8e04-e501435e99ee.jpg): Permission denied in /var/www/sistemapos/controllers/usuarios-controller.php on line 351
+[04-Apr-2022 12:43:40 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in /var/www/sistemapos/controllers/usuarios-controller.php:383
+Stack trace:
+#0 /var/www/sistemapos/views/modules/usuarios.php(493): ControllerUser::ctl_EditUser()
+#1 /var/www/sistemapos/views/template.php(164): include('...')
+#2 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#3 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#4 {main}
+  thrown in /var/www/sistemapos/controllers/usuarios-controller.php on line 383
+[04-Apr-2022 12:44:25 America/New_York] PHP Warning:  unlink(views/img/img_users/michael/3557f969-3785-420c-8e04-e501435e99ee.jpg): Permission denied in /var/www/sistemapos/controllers/usuarios-controller.php on line 351
+[04-Apr-2022 12:44:25 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in /var/www/sistemapos/controllers/usuarios-controller.php:383
+Stack trace:
+#0 /var/www/sistemapos/views/modules/usuarios.php(493): ControllerUser::ctl_EditUser()
+#1 /var/www/sistemapos/views/template.php(164): include('...')
+#2 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#3 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#4 {main}
+  thrown in /var/www/sistemapos/controllers/usuarios-controller.php on line 383
+[04-Apr-2022 12:45:02 America/New_York] PHP Warning:  Undefined variable $value in /var/www/sistemapos/views/modules/crear-venta.php on line 136
+[04-Apr-2022 12:45:05 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(164): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 12:46:41 America/New_York] PHP Warning:  mkdir(): Permission denied in /var/www/sistemapos/controllers/productos-controller.php on line 104
+[04-Apr-2022 12:46:41 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in /var/www/sistemapos/controllers/productos-controller.php:130
+Stack trace:
+#0 /var/www/sistemapos/views/modules/productos.php(359): ControllerProducts::ctl_CrearProducto()
+#1 /var/www/sistemapos/views/template.php(164): include('...')
+#2 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#3 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#4 {main}
+  thrown in /var/www/sistemapos/controllers/productos-controller.php on line 130
+[04-Apr-2022 12:54:05 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'ventas_producto' doesn't have a default value in /var/www/sistemapos/models/productos-model.php:78
+Stack trace:
+#0 /var/www/sistemapos/models/productos-model.php(78): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/productos-controller.php(151): ModelProductos::mdl_RegistrarPoducto()
+#2 /var/www/sistemapos/views/modules/productos.php(359): ControllerProducts::ctl_CrearProducto()
+#3 /var/www/sistemapos/views/template.php(164): include('...')
+#4 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#5 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#6 {main}
+  thrown in /var/www/sistemapos/models/productos-model.php on line 78
+[04-Apr-2022 12:55:23 America/New_York] PHP Warning:  mkdir(): File exists in /var/www/sistemapos/controllers/productos-controller.php on line 104
+[04-Apr-2022 12:55:23 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'ventas_producto' doesn't have a default value in /var/www/sistemapos/models/productos-model.php:78
+Stack trace:
+#0 /var/www/sistemapos/models/productos-model.php(78): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/productos-controller.php(151): ModelProductos::mdl_RegistrarPoducto()
+#2 /var/www/sistemapos/views/modules/productos.php(359): ControllerProducts::ctl_CrearProducto()
+#3 /var/www/sistemapos/views/template.php(164): include('...')
+#4 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#5 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#6 {main}
+  thrown in /var/www/sistemapos/models/productos-model.php on line 78
+[04-Apr-2022 13:01:37 America/New_York] PHP Warning:  mkdir(): File exists in /var/www/sistemapos/controllers/productos-controller.php on line 104
+[04-Apr-2022 12:07:01 America/Guayaquil] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'ultima_compra' doesn't have a default value in /var/www/sistemapos/models/clientes-model.php:25
+Stack trace:
+#0 /var/www/sistemapos/models/clientes-model.php(25): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/clientes-controller.php(39): ModelClientes::mdl_crearCliente()
+#2 /var/www/sistemapos/views/modules/clientes.php(260): ControllerClientes::ctl_crearCLiente()
+#3 /var/www/sistemapos/views/template.php(164): include('...')
+#4 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#5 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#6 {main}
+  thrown in /var/www/sistemapos/models/clientes-model.php on line 25
+[04-Apr-2022 13:13:16 America/New_York] PHP Warning:  Undefined variable $value in /var/www/sistemapos/views/modules/crear-venta.php on line 136
+[04-Apr-2022 13:13:37 America/New_York] PHP Warning:  Undefined variable $value in /var/www/sistemapos/views/modules/crear-venta.php on line 136
+[04-Apr-2022 13:18:02 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(164): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 13:18:16 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/reportes-ventas.php(90): include('...')
+#4 /var/www/sistemapos/views/template.php(164): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 13:18:32 America/New_York] PHP Warning:  Undefined variable $value in /var/www/sistemapos/views/modules/editar-venta.php on line 157
+[04-Apr-2022 13:18:36 America/New_York] PHP Warning:  Undefined variable $value in /var/www/sistemapos/views/modules/editar-venta.php on line 157
+[04-Apr-2022 13:18:39 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(164): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 13:18:51 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sistema-pos.ventas.fecha' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /var/www/sistemapos/models/ventas-model.php:225
+Stack trace:
+#0 /var/www/sistemapos/models/ventas-model.php(225): PDOStatement->execute()
+#1 /var/www/sistemapos/controllers/ventas-controller.php(555): ModeloVentas::mdl_RangoFechaVentasReportes()
+#2 /var/www/sistemapos/views/modules/reportes/grafico-ventas.php(20): ControllerVentas::ctl_RangoFechasReportes()
+#3 /var/www/sistemapos/views/modules/home.php(48): include('...')
+#4 /var/www/sistemapos/views/template.php(164): include('...')
+#5 /var/www/sistemapos/controllers/template-controller.php(7): include('...')
+#6 /var/www/sistemapos/index.php(33): ControllerTemplate::ctrTemplate()
+#7 {main}
+  thrown in /var/www/sistemapos/models/ventas-model.php on line 225
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 6 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 7 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 8 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 9 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 51
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 74
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 74
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 89
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 89
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 92
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 92
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 6 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 6 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 7 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 7 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 8 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 8 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 9 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 124
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 9 in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/reportes/productosMasVendidos.php on line 127
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 5 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 6 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 6 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 6 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 7 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 7 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 7 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 8 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 8 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 8 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 9 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 25
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 9 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 47
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Undefined array key 9 in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49
+[04-Apr-2022 13:36:20 America/New_York] PHP Warning:  Trying to access array offset on value of type null in /var/www/sistemapos/views/modules/home/productos-recientes.php on line 49

@@ -1,0 +1,263 @@
+
+/*=============================================
+=                   DESKTOP                   =
+=============================================*/
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+
+    .btn_agregarProducto{
+
+        display: none;
+
+    }
+
+}
+
+/*=============================================
+=                   LAPTOP                   =
+=============================================*/
+
+@media screen and (min-width: 1025px) and (max-width: 1441px) {
+
+    .btn_agregarProducto{
+
+        display: none;
+
+    }
+
+}
+
+/*=============================================
+=                   LAPTOP-TABLET                   =
+=============================================*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .btn_agregarProducto{
+
+        display: none;
+
+    }
+
+}
+
+/*=============================================
+=                   TABLET                   =
+=============================================*/
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .card_tabla_productosVentas{
+
+        display: none;
+
+    }
+
+    .div_Venta_Efectivo{
+
+        width: 50%;
+
+    }
+
+    .div_Venta_CambioEfectivo{
+
+        width: 50%;
+
+    }
+
+}
+
+/*=============================================
+=                   MOBILE                   =
+=============================================*/
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+
+    .card_tabla_productosVentas{
+
+        display: none;
+
+    }
+
+    .cantidadIngreso{
+
+        width: 50%;
+        margin-top: 5px;
+
+    }
+
+    .precioIngreso{
+
+        width: 50%;
+        margin-top: 5px;
+        padding-right: 0px;
+
+    }
+
+    .caja_select{
+
+        margin-bottom: 0px;
+
+    }
+
+    .clienteINP-crearventa{
+
+        padding-bottom: 0px;
+
+    }
+
+    .div_Venta_Efectivo{
+
+        width: 50%;
+
+    }
+
+    
+    .div_Venta_CambioEfectivo{
+
+        width: 50%;
+        padding-right: 0px;
+
+    }
+
+    .cancelBtn, .btn_ReporteVentas{
+        padding: 5px;
+    }
+
+}
+
+/*=============================================
+=                   MOBILE                   =
+=============================================*/
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+
+    .card_tabla_productosVentas{
+
+        display: none;
+
+    }
+
+    .cantidadIngreso{
+
+        width: 50%;
+        margin-top: 5px;
+
+    }
+
+    .precioIngreso{
+
+        width: 50%;
+        margin-top: 5px;
+        padding-right: 0px;
+
+    }
+
+    .caja_select{
+
+        margin-bottom: 0px;
+
+    }
+
+    .clienteINP-crearventa{
+
+        padding-bottom: 0px;
+
+    }
+
+    .div_Venta_Efectivo{
+
+        width: 50%;
+
+    }
+
+    
+    .div_Venta_CambioEfectivo{
+
+        width: 50%;
+        padding-right: 0px;
+
+    }
+
+    .cancelBtn{
+        
+        padding: 5px;
+        font-size: 15px;
+
+    }
+    .btn_ReporteVentas{
+        
+        padding: 8px;
+        font-size: 10px;
+
+    }
+
+}
+
+/*=============================================
+=                   MOBILE                   =
+=============================================*/
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+
+    .card_tabla_productosVentas{
+
+        display: none;
+
+    }
+
+    .cantidadIngreso{
+
+        width: 50%;
+        margin-top: 5px;
+
+    }
+
+    .precioIngreso{
+
+        width: 50%;
+        margin-top: 5px;
+        padding-right: 0px;
+
+    }
+
+    .caja_select{
+
+        margin-bottom: 0px;
+
+    }
+
+    .clienteINP-crearventa{
+
+        padding-bottom: 0px;
+
+    }
+
+    .div_Venta_Efectivo{
+
+        width: 50%;
+
+    }
+
+    
+    .div_Venta_CambioEfectivo{
+
+        width: 50%;
+        padding-right: 0px;
+
+    }
+
+    .cancelBtn{
+        
+        padding: 8px;
+        font-size: 12px;
+
+    }
+    .btn_ReporteVentas{
+        
+        padding: 8px;
+        font-size: 10px;
+
+    }
+
+}

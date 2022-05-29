@@ -1,0 +1,125 @@
+/*=============================================
+=                   ESTILOS PROPIOS                   =
+=============================================*/
+
+
+/* Estilos de inputs */
+
+/* HEADER ICONS RIGHT */
+
+.icon_gear_header:hover,
+.icon_nameuser_header:hover > span{
+
+    color: #f7f7f7;
+
+}
+
+.title_pages{
+
+    color: #646464;
+
+}
+
+/*=============================================
+=ESTILOS PARA MI TABLA PRODUCTOS=
+=============================================*/
+
+.tableProductos > tbody > tr > td:nth-child(1),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(9),
+td:nth-child(6),
+td:nth-child(2){
+
+    text-align: center;
+
+}
+
+.tableProductos > tbody > tr > td:nth-child(7),
+td:nth-child(8){
+
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.tableClientes > tbody > tr > td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8),
+td:nth-child(9),
+td:nth-child(10){
+
+    text-align: center;
+
+}
+
+.btn-warning{
+
+    color: #f4f4f4;
+
+}
+
+.btn-warning:hover{
+
+    color: #f4f4f4;
+
+}
+
+.btn_ImprimirFactura{
+
+    color: #f4f4f4;
+
+}
+
+.btn_ImprimirFactura:hover{
+
+    color: #f4f4f4;
+
+}
+
+.TablaVentas > tbody > tr > td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5){
+
+    text-align: center;
+
+}
+
+.TablaVentas > tbody > tr > td:nth-child(5),
+td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8){
+
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.dataTables_filter{
+
+    margin-bottom: 25px;
+
+}
+
+.toggle_button_header{
+
+    background-color: transparent !important;
+
+}
+
+.toggle_button_header:hover{
+
+    background-color: transparent !important;
+    opacity: 0.5;
+
+}
+
+
